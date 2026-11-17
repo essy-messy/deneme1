@@ -1,5 +1,5 @@
 yaml
-name: Calistir
+name: calistir
 
 on:
 workflow_dispatch:
