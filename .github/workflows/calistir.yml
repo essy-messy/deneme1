@@ -1,16 +1,11 @@
-yaml
-name: calistir
-
-on:
-workflow_dispatch:
-
- jobs:
+name: Calistir
+on: workflow_dispatch
+jobs:
   calistir:
-   runs-on: ubuntu-latest
- 
-   steps:
- -uses: actions/checkout@v4
- -uses: actions/setup-phyton@v5
- with:
-  phyton-version: "3.12"
- -run: phyton hava.py
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python hava.py
